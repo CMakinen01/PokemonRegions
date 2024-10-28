@@ -1,0 +1,38 @@
+.container {
+  margin: auto;
+  max-width: 500px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.heading {
+  color: red;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-link-item {
+  padding-right: 2rem;
+}
+.nav-link-text {
+  color: black;
+  font-weight: bold;
+}
+
+.site-title {
+  font-size: 3rem;
+  color: blueviolet;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+.nav-link-text:hover{
+  color: rgb(129, 167, 180);
+}
+body{
+  background-color: gray;
+  font-weight: bold;
+}
