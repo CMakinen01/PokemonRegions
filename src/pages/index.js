@@ -12,6 +12,8 @@ const LookupPage = () => {
         src="../images/Regions.webp"
         //image credit: https://pokemon.fandom.com/wiki/Regions
       />
+      <p>Choose your trainer type to alter the background color!</p>
+
     </Layout>
   )
 }
