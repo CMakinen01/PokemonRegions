@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Pokemon Regions",
+    title: "Pokemon Website",
   },
   plugins: [
     "gatsby-plugin-image",
