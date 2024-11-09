@@ -33,6 +33,11 @@
   color: rgb(129, 167, 180);
 }
 body{
-  background-color: gray;
+  background-image: url('../images/Background.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*fixes background image cropping badly*/
   font-weight: bold;
 }
+/*Image source: https://www.pinterest.com/narrator55/ */

@@ -12,7 +12,7 @@ const PokemonSearch = ({ onFetch }) => {
       onFetch(pokemonId);
     }
   };
-
+  
   return (
     <div>
       <label htmlFor="pokemonId" style={{ marginRight: '5px' }}>

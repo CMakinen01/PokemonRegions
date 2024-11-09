@@ -42,7 +42,8 @@ const TeamPage = () => {
         </div>
       )}
       <button>Add To Team!</button>
-
+      <button style={{ marginLeft: '10px' }}>Rate Your Team!</button>
+      <button style={{ marginLeft: '10px' }}>Clear Team!</button>
     </Layout>
   );
 };
