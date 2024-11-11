@@ -1,9 +1,9 @@
 import React from 'react';
 
-const capitalize = (string) => {
+export const capitalize = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
 };
-const hyphenRemover = (string) => {//removes hyphens from names
+export const hyphenRemover = (string) => {//removes hyphens from names
     return string
     .split('-')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
