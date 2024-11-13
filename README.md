@@ -1,1 +1,1 @@
-A Gatsby site that incorporates JavaScript and CSS to create a site that informs the user of all of the mainline Pokemon Regions, as well as having a dropdown menu to learn about every Pokemon starter.
+A Gatsby site that incorporates JavaScript and CSS. The "Intro", "General", and "Regions" pages are mainly static, and the "Lookup" page uses React components to search up any Pokemon by ID. The "Team" page uses the same React components to search for Pokemon, as well as additional components to add, clear, and rate a Pokemon team.
