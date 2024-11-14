@@ -4,11 +4,13 @@ import Seo from '../components/seo';
 import PokemonSearch from '../components/pokemonSearch';
 import PokemonDetails from '../components/pokemonDetails';
 import TeamBuilder from '../components/teamBuilder';
+import RateTeam from '../components/rateTeam';
 
 const TeamPage = () => {
   const [pokemonData, setPokemonData] = useState(null);
   const [team, setTeam] = useState([]);
   const [showTeam, setShowTeam] = useState(false);
+  const [showRating, setShowRating] = useState(false);
 
   const getDataPokemon = async (pokemonId) => {
     try {
@@ -52,14 +54,27 @@ const TeamPage = () => {
       
       
       
-      <button>Rate Your Team!</button>
-      <button style={{ marginLeft: '10px' }} onClick={() => setTeam([])}>Clear Team!</button> 
+      
 
+      
       {pokemonData && (//shows when a Pokemon is rendered
         <div>
           <PokemonDetails pokemonData={pokemonData} />
           <button onClick={addToTeam}>Add To Team!</button>
+          
+          <button style={{ marginLeft: '10px' }} onClick={() => { 
+            setTeam([]); 
+            setShowRating(true); 
+            }}>
+          Clear Team!
+          </button>
+
           <button style={{ marginLeft: '10px' }}onClick={clickShowTeam}>Show Your Team!</button>
+
+          <button style={{ marginLeft: '10px' }} onClick={() => setShowRating(true)}>Rate Your Team!</button>
+          {showRating && <RateTeam team={team} />}
+
+          
         </div>
       )}
       {showTeam && <TeamBuilder team={team} />}
