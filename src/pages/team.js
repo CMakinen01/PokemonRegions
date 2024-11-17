@@ -64,7 +64,7 @@ const TeamPage = () => {
           
           <button style={{ marginLeft: '10px' }} onClick={() => { 
             setTeam([]); 
-            setShowRating(true); 
+            setShowRating(false); 
             }}>
           Clear Team!
           </button>
